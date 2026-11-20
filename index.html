@@ -3,62 +3,75 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IRI Food N Drinks Cafe - North Lakhimpur</title>
+<title>IRI Food N Drinks Cafe - Ulubari</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family: 'Segoe UI', Arial, sans-serif}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
 body{background:#111;color:#fff}
-nav{background:#000;padding:15px 20px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
-nav b{color:#ff3b30;font-size:20px;letter-spacing:1px}
+nav{background:#000;padding:15px;display:flex;justify-content:space-between;position:sticky;top:0;z-index:10}
+nav b{color:#ff6b00;font-size:20px}
 nav a{color:#fff;text-decoration:none;margin-left:15px;font-size:14px}
-.hero{height:80vh;background:url('https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1200') center/cover;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background-blend-mode:overlay;background-color:rgba(0,0,0,0.75);padding:20px}
-.hero h1{font-size:38px;color:#ff3b30}
-.hero p{margin:15px 0;color:#ccc;font-size:16px;line-height:1.5}
-.btn{background:#ff3b30;color:#fff;padding:12px 28px;border-radius:25px;text-decoration:none;font-weight:bold}
-.box{margin:20px;background:#1e1e1e;padding:20px;border-radius:12px;text-align:center;border:1px solid #ff3b30}
-.box h2{color:#ff3b30}
-.section{padding:20px}
-.section h2{text-align:center;margin-bottom:20px;color:#ff3b30}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}
-.card{background:#1e1e1e;border-radius:10px;overflow:hidden;text-align:center;padding-bottom:15px}
-.card img{width:100%;height:130px;object-fit:cover}
-.card h3{margin:10px 0 5px;font-size:15px}
-.price{color:#ff3b30;font-weight:bold}
-footer{text-align:center;padding:20px;color:#888;font-size:13px}
-.wa{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;width:55px;height:55px;border-radius:50%;display:flex;justify-content:center;align-items:center;text-decoration:none;font-size:24px}
+.hero{padding:60px 20px;text-align:center;background:linear-gradient(45deg,#ff6b00,#ff2e00)}
+.hero h1{font-size:38px}
+.hero p{margin:15px 0}
+.btn{background:#fff;color:#000;padding:12px 25px;border-radius:25px;text-decoration:none;font-weight:bold;display:inline-block;margin-top:10px}
+.section{padding:50px 20px;text-align:center}
+.section h2{color:#ff6b00;margin-bottom:20px;font-size:28px}
+.card{background:#222;margin:15px auto;padding:20px;border-radius:15px;max-width:350px;text-align:left}
+.card h3{color:#ff6b00}
+.card p{color:#ccc;margin-top:8px}
+.price{color:#25D366;font-weight:bold;font-size:20px;float:right}
+.challenge{background:#ff6b00;padding:40px 20px;text-align:center}
+.challenge h2{font-size:32px}
+.gallery img{width:90%;max-width:350px;border-radius:15px;margin:10px}
+.whatsapp{background:#075E54;padding:40px 20px;text-align:center}
+.wbtn{background:#25D366;color:#fff;padding:15px 30px;border-radius:30px;text-decoration:none;font-weight:bold;font-size:18px;display:inline-block;margin-top:15px}
+footer{background:#000;padding:20px;text-align:center;color:#888;font-size:13px}
 </style>
 </head>
 <body>
 
 <nav>
 <b>IRI CAFE</b>
-<div><a href="#menu">Menu</a><a href="#challenge">Challenge</a></div>
+<div><a href="#home">Home</a><a href="#menu">Menu</a><a href="#challenge">Challenge</a><a href="#gallery">Gallery</a></div>
 </nav>
 
-<div class="hero">
-<h1>IRI FOOD N DRINKS CAFE</h1>
-<p>Taste Verified Silence<br>Best Cafe in North Lakhimpur for Food, Music & Vibes</p>
+<div class="hero" id="home">
+<h1>IRI Food N Drinks Cafe</h1>
+<p>Ulubari ka No.1 Food Cafe | Best Taste, Best Price</p>
+<p>1KG Food Challenge Available Here!</p>
 <a href="#menu" class="btn">View Menu</a>
-</div>
-
-<div class="box" id="challenge">
-<h2>1KG PORK CHALLENGE</h2>
-<p style="margin:10px 0;color:#ccc">Finish the full 1KG Pork Platter and get it FREE!</p>
-<p style="font-size:24px;color:#ff3b30;font-weight:bold">Only Rs. 499</p>
 </div>
 
 <div class="section" id="menu">
 <h2>Our Menu</h2>
-<div class="grid">
-<div class="card"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600"><h3>Classic Burger</h3><p class="price">Rs. 149</p></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1496116218417-1a781b1c416c?w=600"><h3>Chicken Momos</h3><p class="price">Rs. 99</p></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600"><h3>BBQ Pork</h3><p class="price">Rs. 299</p></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1517244683847-7456b63c5969?w=600"><h3>Cafe Ambience</h3><p class="price">Live Music</p></div>
-</div>
+<div class="card"><span class="price">₹199</span><h3>Chicken Burger</h3><p>Crispy chicken, cheese, special sauce ke saath</p></div>
+<div class="card"><span class="price">₹249</span><h3>Peri Peri Fries</h3><p>Spicy peri peri masala fries</p></div>
+<div class="card"><span class="price">₹299</span><h3>IRI Special Platter</h3><p>Burger + Fries + Cold Drink combo</p></div>
+<div class="card"><span class="price">₹349</span><h3>Chicken Pizza</h3><p>Cheese blast pizza, fresh baked</p></div>
 </div>
 
-<footer>IRI Food N Drinks Cafe, North Lakhimpur, Assam<br>Open Daily: 11 AM - 10 PM</footer>
+<div class="challenge" id="challenge">
+<h2>1KG CHALLENGE</h2>
+<p style="margin:15px 0;font-size:18px">1KG Burger / 1KG Fries khatam karo aur jeeto FREE Meal + ₹500 Cash!</p>
+<p>Challenge ke liye WhatsApp pe booking karo</p>
+<a href="#contact" class="btn">Book Challenge</a>
+</div>
 
-<a class="wa" href="https://wa.me/919999999999">W</a>
+<div class="section gallery" id="gallery">
+<h2>Our Gallery</h2>
+<p>Yahan cafe ki real photos lagegi final website me</p>
+<div style="font-size:60px;margin:20px">🍔 🍕 🍟 🥤</div>
+<p style="color:#ccc">Demo ke liye photos placeholder hai</p>
+</div>
+
+<div class="whatsapp" id="contact">
+<h2>Order on WhatsApp</h2>
+<p style="margin-top:10px">Ghar baithe order karo, hum deliver kar denge</p>
+<a href="https://wa.me/919999999999?text=Hi%20IRI%20Cafe,%20mujhe%20order%20karna%20hai" class="wbtn">WhatsApp Order Karo</a>
+<p style="margin-top:20px;color:#ccc">Ulubari, Assam | Open: 10 AM - 10 PM</p>
+</div>
+
+<footer>© 2026 IRI Food N Drinks Cafe | Made by Morzic Digital Studio</footer>
 
 </body>
-  </html>
+</html>
